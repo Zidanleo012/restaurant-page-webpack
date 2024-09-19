@@ -1,5 +1,5 @@
 import images from "./images/master-chef-modified.png"
-import award1 from "./images/award-1.png"
+import awardDisplay from "./module/awardsDisplay.js"
 import "./styles.css"
 
 
@@ -30,19 +30,6 @@ function homePage() {
     content.appendChild(logoWrapper)
 }
 
-function awardsSection() {
-    const awardWrapper = document.createElement('div');
-    awardWrapper.classList.add('award-wrapper');
-
-    const awardOne = document.createElement('img');
-    awardOne.classList.add('award-picture')
-    awardOne.src = award1;
-
-    awardWrapper.append(awardOne)
-
-    content.appendChild(awardWrapper);
-}
-
 homePage()
-awardsSection()
+awardDisplay(content)
 // test

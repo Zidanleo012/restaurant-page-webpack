@@ -16,7 +16,9 @@
 
 body {
     display: flex;
-    background-color: blanchedalmond;
+    background-image: url(./images/kitchen-img.jpeg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
 
 body>* {
@@ -26,6 +28,7 @@ body>* {
 .header {
     height: 100vh;
     width: max(200px, 15vw);
+    background-image: url(./images/wood.jpeg);
 }
 
 .navbar {
@@ -50,11 +53,15 @@ body>* {
 
 .logo-wrapper {
     display: flex;
+    background-color: rgb(255 255 255 / 0.3);
+    margin-top: 150px;
+    height: 250px;
 }
 
 .logo {
     width: 400px;
     mix-blend-mode: multiply;
+    object-fit: cover;
 }
 
 .brand-and-text {
@@ -79,10 +86,15 @@ body>* {
 }
 
 .award-wrapper {
-    display: grid;
-    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    height: 100px;
+    margin-top: 100px;
 }
 
 .award-picture {
-    width: 150px;
+    width: 100px;
+    /* mix-blend-mode: multiply; */
+    object-fit:fill;
 }
