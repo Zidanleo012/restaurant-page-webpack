@@ -11,7 +11,7 @@ Source of materials i use in this project:
 <a href="https://makrisathens.com/en/">Best restaurant awards Markis Athens</a><br>
 <a href="https://www.vecteezy.com/photo/40940607-ai-generated-glass-jars-with-coffee-beans-on-wooden-table-in-modern-kitchen-blurred-background">Kitchen picture Background</a><br>
 
-Food pictures:
+Food pictures:<br>
 <a href="https://www.wursti.fi/resepti/siskonmakkarakeitto/">Siskonmakkarakeitto</a>
 
 <a href="https://jernejkitchen.com/recipes/finnish-salmon-soup-lohikeitto">Lohikeitto</a>
