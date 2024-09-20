@@ -59,7 +59,9 @@ function switchPageEvent() {
     }
 }
 
-switchPageEvent(home, menu, about)
+switchPageEvent(home, menu, about);
+homePage();
+awardDisplay(content);
 
 // menuDisplay(content)
 // displayAbout(content)
