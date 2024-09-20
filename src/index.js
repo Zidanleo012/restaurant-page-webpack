@@ -1,5 +1,6 @@
 import images from "./images/master-chef-modified.png"
 import awardDisplay from "./module/awardsDisplay.js"
+import menuDisplay from "./module/menuDisplay.js"
 import "./styles.css"
 
 
@@ -30,6 +31,7 @@ function homePage() {
     content.appendChild(logoWrapper)
 }
 
-homePage()
-awardDisplay(content)
+// homePage()
+// awardDisplay(content)
+menuDisplay(content)
 // test
