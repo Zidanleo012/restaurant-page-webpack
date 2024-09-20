@@ -19,16 +19,15 @@ body {
     background-image: url(./images/kitchen-img.jpeg);
     /* background-repeat: no-repeat; */
     background-size: cover;
-}
-
-body>* {
-    border: 1px solid black;
+    height: 100vh;
 }
 
 .header {
     height: 100vh;
     width: max(200px, 15vw);
     background-image: url(./images/wood.jpeg);
+    padding: 60px 0;
+    box-shadow: 5px 0 15px black;
 }
 
 .navbar {
@@ -42,9 +41,11 @@ body>* {
 }
 
 .navbar>button {
-    height: 80px;
-    width: 80px;
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
+    font-family: 'kaushan';
+    font-size: 1.7rem;
 }
 
 #content {
@@ -97,7 +98,7 @@ body>* {
 .award-picture {
     width: 100px;
     /* mix-blend-mode: multiply; */
-    object-fit:fill;
+    object-fit: fill;
 }
 
 .menu-grid {
@@ -109,7 +110,7 @@ body>* {
     /* grid-auto-rows: 200px; */
 }
 
-.card{
+.card {
     background-color: white;
     display: flex;
     box-shadow: 5px 0 5px rgb(0 0 0 / 0.3);
@@ -133,7 +134,7 @@ body>* {
 }
 
 .desc {
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     letter-spacing: 0.7px;
 }
 
@@ -141,4 +142,53 @@ body>* {
     position: absolute;
     bottom: 0px;
     font-size: 1.5rem;
+}
+
+/* About Us */
+
+.about-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr;
+    width: 700px;
+    height: 300px;
+    column-gap: 20px;
+}
+
+.about-us {
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 4rem;
+    margin: auto 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-about {
+    background-color: rgb(255 255 255 / 0.7);
+    border: solid 2px black;
+    border-left: solid 10px black;
+    width: 220px;
+    /* border-radius: 10px; */
+}
+
+.card-about > .contact-item:first-child {
+    font-size: 2rem;
+    font-family: 'kaushan', sans-serif;
+    margin-left: 5px;
+}
+
+.card-about > * + * {
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+.contact-item:nth-child(1n + 3) {
+    margin-top: 20px;
 }
