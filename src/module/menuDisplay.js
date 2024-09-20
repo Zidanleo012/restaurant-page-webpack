@@ -15,11 +15,16 @@ const arr = [
 ]
 
 function menuDisplay(parent) {
+    const menuWrapper = document.createElement('div');
+    menuWrapper.classList.add('menu-grid');
+
     arr.forEach(item => {
         const leipajuusto = createMenuCard(...item);
-        parent.append(leipajuusto)
+        menuWrapper.append(leipajuusto)
     }
     )
+
+    parent.append(menuWrapper)
 }
 
 function createMenuCard(dish, desc, price, picSrc) {
