@@ -76,6 +76,7 @@ body>* {
     font-size: 4.5rem;
     font-family: 'kaushan', sans-serif;
     border-bottom: 6px solid black;
+    flex-wrap: nowrap;
 }
 
 .brand-text {
@@ -97,4 +98,47 @@ body>* {
     width: 100px;
     /* mix-blend-mode: multiply; */
     object-fit:fill;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+    /* grid-auto-rows: 200px; */
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    box-shadow: 5px 0 5px rgb(0 0 0 / 0.3);
+}
+
+.dish-pic {
+    height: 200px;
+    flex: 0 1 10px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.desc-wrapper {
+    padding-left: 5px;
+    position: relative;
+}
+
+.dish-name {
+    font-family: 'kaushan', sans-serif;
+    font-size: 1.9rem;
+}
+
+.desc {
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 0.7px;
+}
+
+.price {
+    position: absolute;
+    bottom: 0px;
+    font-size: 1.5rem;
 }
