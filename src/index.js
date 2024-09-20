@@ -1,10 +1,14 @@
 import images from "./images/master-chef-modified.png"
 import awardDisplay from "./module/awardsDisplay.js"
 import menuDisplay from "./module/menuDisplay.js"
+import displayAbout from "./module/aboutDisplay.js"
 import "./styles.css"
 
 
-const content = document.querySelector('#content')
+const content = document.querySelector('#content');
+const home = document.querySelector('#home');
+const menu = document.querySelector('#menu');
+const about = document.querySelector('#about');
 
 function homePage() {
     const logoWrapper = document.createElement('div')
@@ -31,7 +35,32 @@ function homePage() {
     content.appendChild(logoWrapper)
 }
 
-// homePage()
-// awardDisplay(content)
-menuDisplay(content)
+function switchPageEvent() {
+    for (let key in arguments) {
+        const item = arguments[key];
+        item.addEventListener('click', (e) => {
+            while (content.hasChildNodes()) {
+                content.removeChild(content.firstChild);
+            }
+
+            switch (item.id) {
+                case 'home':
+                    homePage();
+                    awardDisplay(content);
+                    break;
+                case 'menu':
+                    menuDisplay(content);
+                    break;
+                case 'about':
+                    displayAbout(content);
+                    break;
+            }
+        })
+    }
+}
+
+switchPageEvent(home, menu, about)
+
+// menuDisplay(content)
+// displayAbout(content)
 // test
